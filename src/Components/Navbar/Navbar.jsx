@@ -4,7 +4,7 @@ import { FaCartShopping } from "react-icons/fa6";
 const Navbar = () => {
     return (
         <div>
-            <div className="navbar container mx-auto">
+            <div className="navbar container mx-auto ">
                 <div className="navbar-start">
                     <div className="flex items-center gap-1 font-bold text-xl">
                         <h1 className='text-4xl font-bold bg-linear-to-r from-[#513BF9] to-[#9514FA] bg-clip-text text-transparent'>DigiTools</h1>

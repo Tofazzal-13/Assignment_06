@@ -1,0 +1,110 @@
+[
+  {
+    "id": "prod-01",
+    "name": "Starter Plan",
+    "description": "Essential tools for individuals and small projects getting started.",
+    "price": 0,
+    "period": "one-time",
+    "tag": "Free Forever",
+    "tagType": "new",
+    "features": ["3 Projects", "Basic Analytics", "Community Support"],
+    "icon": "rocket-launch",
+    "img": "https://i.ibb.co.com/sJPR2SP3/2601192.png"
+  },
+  {
+    "id": "prod-02",
+    "name": "Pro Marketer",
+    "description": "Advanced automation and deep insights for growing brands.",
+    "price": 29.99,
+    "period": "monthly",
+    "tag": "Popular",
+    "tagType": "popular",
+    "features": ["Unlimited Projects", "Custom Branding", "Priority Email Support", "API Access"],
+    "icon": "trending-up",
+    "img": "https://i.ibb.co.com/GvZs6Cq8/images-2.png"
+  },
+  {
+    "id": "prod-03",
+    "name": "Enterprise Suite",
+    "description": "Full-scale solution with dedicated security and team management.",
+    "price": 999.00,
+    "period": "yearly",
+    "tag": "Best Value",
+    "tagType": "best seller",
+    "features": ["SSO & SAML", "Dedicated Account Manager", "Custom Contracts", "24/7 Phone Support"],
+    "icon": "shield-check",
+    "img": "https://i.ibb.co.com/gZyynSbL/17505035.png"
+  },
+  {
+    "id": "prod-04",
+    "name": "Creative Cloud Mini",
+    "description": "Lightweight editing tools for social media content creators.",
+    "price": 12.50,
+    "period": "monthly",
+    "tag": "New",
+    "tagType": "new",
+    "features": ["100+ Templates", "Direct Social Export", "Cloud Storage (50GB)"],
+    "icon": "palette",
+    "img": "https://i.ibb.co.com/JjW40FF2/adobe-creative-express-cloud-icon-free-png.png"
+  },
+  {
+    "id": "prod-05",
+    "name": "SEO Master Class",
+    "description": "A comprehensive lifetime access course on search engine optimization.",
+    "price": 199.00,
+    "period": "one-time",
+    "tag": "Best Seller",
+    "tagType": "best seller",
+    "features": ["Video Tutorials", "Downloadable Checklists", "Lifetime Updates"],
+    "icon": "search-eye",
+    "img": "https://i.ibb.co.com/jZ4PjKHC/5681664.png"
+  },
+  {
+    "id": "prod-06",
+    "name": "Team Collaboration Pro",
+    "description": "Synchronize your workflow across global distributed teams.",
+    "price": 15.00,
+    "period": "monthly",
+    "tag": "Trending",
+    "tagType": "popular",
+    "features": ["Real-time Whiteboarding", "Time Tracking", "App Integrations"],
+    "icon": "users",
+    "img": "https://i.ibb.co.com/pBsWgDWk/817826.png"
+  },
+  {
+    "id": "prod-07",
+    "name": "Data Shield Yearly",
+    "description": "Premium VPN and encryption services for total digital privacy.",
+    "price": 59.99,
+    "period": "yearly",
+    "tag": "Top Rated",
+    "tagType": "best seller",
+    "features": ["Multi-device Sync", "Kill Switch Technology", "Zero-log Policy"],
+    "icon": "lock-closed",
+    "img": "https://i.ibb.co.com/CcJWjS0/images-4.png"
+  },
+  {
+    "id": "prod-08",
+    "name": "Influencer Toolkit",
+    "description": "The ultimate bundle for managing sponsors and schedules.",
+    "price": 45.00,
+    "period": "monthly",
+    "tag": "Hot",
+    "tagType": "new",
+    "features": ["Media Kit Builder", "Sponsorship Tracker", "Contract Templates"],
+    "icon": "star",
+    "img": "https://i.ibb.co.com/ZpG27rKy/images-5.png"
+  },
+  {
+    "id": "prod-09",
+    "name": "DevOps Pipeline",
+    "description": "Automated deployment and monitoring for software engineers.",
+    "price": 89.00,
+    "period": "monthly",
+    "tag": "High Performance",
+    "tagType": "popular",
+    "features": ["CI/CD Integration", "Auto-scaling", "Error Monitoring"],
+    "icon": "terminal",
+    "img": "https://i.ibb.co.com/fz7Nzcnz/12219573.png"
+  }
+]

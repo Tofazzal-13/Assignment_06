@@ -42,7 +42,7 @@ const Banner = () => {
                     {/* Right Image */}
                     <div className="relative flex justify-center lg:justify-end">
                         <div className="relative">
-                            <img src="/public/banner.png" alt="" />
+                            <img src="/banner.png" alt="" />
                         </div>
                     </div>
                 </div>
