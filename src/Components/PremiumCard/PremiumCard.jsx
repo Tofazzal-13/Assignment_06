@@ -1,11 +1,11 @@
 import React, { useState } from 'react';
 import { toast } from 'react-toastify';
 
-const PremiumCard = ({primium, carts, setCarts}) => {
+const PremiumCard = ({ primium, carts, setCarts }) => {
 
     const [isBuy, setIsBuy] = useState(false)
 
-    const handleBuy = () =>{
+    const handleBuy = () => {
         setIsBuy(true)
         setCarts([...carts, primium])
         toast("add to cart")
@@ -39,7 +39,12 @@ const PremiumCard = ({primium, carts, setCarts}) => {
                 </div>
 
 
-                <button onClick={handleBuy} className='btn rounded-2xl bg-linear-to-r from-[#513BF9] to-[#9514FA] text-white hover:opacity-90 transition-opacity'>
+                <button onClick={handleBuy}
+                    className={`btn rounded-2xl transition-all duration-300 border-none text-white font-semibold 
+                         ${isBuy
+                            ? 'bg-linear-to-r from-[#30B868] to-[#109968]' // Green Gradient jokhon "Added to Cart" hobe
+                            : 'bg-linear-to-r from-[#513BF9] to-[#9514FA] hover:opacity-90' // Purple Gradient jokhon "Buy Now" thakle
+                        }`}>
                     {isBuy ? "Add to Cart" : "Buy Now"}
                 </button>
 
