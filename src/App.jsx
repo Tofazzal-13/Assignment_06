@@ -17,15 +17,15 @@ function App() {
 
   const [activeTab, setActiveTab] = useState("premiums")
   const [carts, setCarts] = useState([])
-  
-  
-  
+
+
+
 
   const primiumPromise = getPrimium()
 
   return (
     <>
-      <Navbar></Navbar>
+      <Navbar carts={carts}></Navbar>
       <Banner></Banner>
       <Count></Count>
       <Tabs></Tabs>
@@ -35,7 +35,8 @@ function App() {
         <input
           type="radio"
           name="my_tabs_1"
-          className="tab rounded-full w-40 "
+          className={`tab rounded-full w-40 transition-all duration-300 ${activeTab === "premiums" ? "bg-gradient-to-r from-[#513BF9] to-[#9514FA] text-white" : "bg-gray-100"
+            }`}
           aria-label="Products"
           defaultChecked
           onClick={() => setActiveTab("premiums")} />
@@ -43,21 +44,22 @@ function App() {
         <input
           type="radio"
           name="my_tabs_1"
-          className="tab rounded-full w-40"
-          aria-label="Cart"
+          className={`tab rounded-full w-40 transition-all duration-300 ${activeTab === "cart" ? "bg-gradient-to-r from-[#513BF9] to-[#9514FA] text-white" : "bg-gray-100"
+            }`}
+          aria-label={carts.length > 0 ? `Cart (${carts.length})` : "Cart"}
           onClick={() => setActiveTab("cart")} />
 
       </div>
-      
-     {activeTab == "premiums" && <Suspense fallback={<span className="loading loading-dots loading-xl"></span>}>
+
+      {activeTab == "premiums" && <Suspense fallback={<span className="loading loading-dots loading-xl"></span>}>
 
         <Primiums primiumPromise={primiumPromise} carts={carts} setCarts={setCarts}></Primiums>
 
       </Suspense>}
 
-      {activeTab == "cart" && <Cart carts = {carts}></Cart>}
+      {activeTab == "cart" && <Cart carts={carts} setCarts={setCarts}></Cart>}
 
-      
+
       <Footer></Footer>
     </>
   )

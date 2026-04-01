@@ -1,7 +1,9 @@
 import React from 'react';
 import { FaCartShopping } from "react-icons/fa6";
 
-const Navbar = () => {
+const Navbar = ({ carts }) => {
+
+
     return (
         <div>
             <div className="navbar container mx-auto ">
@@ -30,7 +32,15 @@ const Navbar = () => {
                     </ul>
                 </div>
                 <div className="navbar-end gap-5">
-                    <FaCartShopping />
+                    <div className='relative '>
+                        <FaCartShopping />
+                        {carts.length > 0 && (
+                            <div className='absolute -top-3 -right-3 bg-red-500 w-5 h-5 rounded-full flex justify-center items-center border border-gray-50'>
+                                <p className='text-white p-2 text-xs font-bold'> {carts.length} </p>
+                            </div>
+                        )}
+                    </div>
+
                     <a className="">Login</a>
                     <button className='btn rounded-full bg-linear-to-r from-[#513BF9] to-[#9514FA] text-white'>Get Started</button>
                 </div>
