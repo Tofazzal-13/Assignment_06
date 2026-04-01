@@ -28,13 +28,13 @@ DigiTools is a modern, high-performance React web application designed for explo
 
 2. **Install dependencies:
     ```bash
-    ```npm install
+    npm install
 
 3. **Start the development server:**
     ```bash
-    ```npm run dev
---
-📂 Features Breakdown
+    npm run dev
+###
+## 📂 Features Breakdown
 Navbar: Real-time cart count and responsive navigation.
 
 Banner: Eye-catching hero section with meaningful call-to-action buttons.
