@@ -7,6 +7,7 @@ import Navbar from './Components/Navbar/Navbar'
 import Primiums from './Components/PrimiumTools/Primiums'
 import Cart from './Components/Cart/Cart'
 import Tabs from './Components/Tabs/Tabs'
+import ThreeSteps from './Components/ThreeSteps/ThreeSteps'
 
 const getPrimium = async () => {
   const res = await fetch("/primium.json");
@@ -30,7 +31,7 @@ function App() {
       <Count></Count>
       <Tabs></Tabs>
 
-      {/* name of each tab group should be unique */}
+      
       <div className="tabs gap-2 tabs-box justify-center bg-transparent">
         <input
           type="radio"
@@ -58,8 +59,7 @@ function App() {
       </Suspense>}
 
       {activeTab == "cart" && <Cart carts={carts} setCarts={setCarts}></Cart>}
-
-
+      <ThreeSteps></ThreeSteps>
       <Footer></Footer>
     </>
   )
