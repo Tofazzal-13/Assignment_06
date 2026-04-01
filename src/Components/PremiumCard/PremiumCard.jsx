@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { toast } from 'react-toastify';
 
 const PremiumCard = ({primium, carts, setCarts}) => {
 
@@ -7,6 +8,7 @@ const PremiumCard = ({primium, carts, setCarts}) => {
     const handleBuy = () =>{
         setIsBuy(true)
         setCarts([...carts, primium])
+        toast("add to cart")
     }
 
     return (

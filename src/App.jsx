@@ -42,7 +42,7 @@ function App() {
         <input
           type="radio"
           name="my_tabs_1"
-          className={`tab rounded-full w-40 transition-all duration-300 ${activeTab === "premiums" ? "bg-gradient-to-r from-[#513BF9] to-[#9514FA] text-white" : "bg-gray-100"
+          className={`tab rounded-full w-40 transition-all duration-300 ${activeTab === "premiums" ? "bg-linear-to-r from-[#513BF9] to-[#9514FA] text-white" : "bg-gray-100"
             }`}
           aria-label="Products"
           defaultChecked
@@ -51,7 +51,7 @@ function App() {
         <input
           type="radio"
           name="my_tabs_1"
-          className={`tab rounded-full w-40 transition-all duration-300 ${activeTab === "cart" ? "bg-gradient-to-r from-[#513BF9] to-[#9514FA] text-white" : "bg-gray-100"
+          className={`tab rounded-full w-40 transition-all duration-300 ${activeTab === "cart" ? "bg-linear-to-r from-[#513BF9] to-[#9514FA] text-white" : "bg-gray-100"
             }`}
           aria-label={carts.length > 0 ? `Cart (${carts.length})` : "Cart"}
           onClick={() => setActiveTab("cart")} />
@@ -65,7 +65,7 @@ function App() {
       </Suspense>}
 
       {activeTab == "cart" && <Cart carts={carts} setCarts={setCarts}></Cart>}
-      <ThreeSteps></ThreeSteps>
+      {<ThreeSteps></ThreeSteps>}
       <Suspense>
         <TransparentCard transparentPromise = {transparentPromise}></TransparentCard>
       </Suspense>
