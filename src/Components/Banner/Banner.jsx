@@ -5,7 +5,7 @@ import { CiPlay1 } from "react-icons/ci";
 const Banner = () => {
     return (
         <div>
-            <div className=" min-h-162.5 flex items-center overflow-hidden">
+            <div className=" min-h-162.5 flex items-center overflow-hidden my-5 pl-4 md:p-0">
                 <div className=" mx-auto grid grid-cols-1 lg:grid-cols-2 gap-10 items-center  z-10">
                     {/* Left Content */}
                     <div className="space-y-4">
@@ -42,7 +42,7 @@ const Banner = () => {
                     {/* Right Image */}
                     <div className="relative flex justify-center lg:justify-end">
                         <div className="relative">
-                            <img src="/src/assets/banner.png" alt="" />
+                            <img src="/public/banner.png" alt="" />
                         </div>
                     </div>
                 </div>
