@@ -1,46 +1,46 @@
-🛠️ DigiTools - Premium AI Tools Marketplace
-DigiTools is a modern, high-performance web application designed to help users explore and manage premium AI-powered digital tools. The platform features a seamless user experience for browsing products, viewing pricing plans, and managing a dynamic shopping cart.
+# 🛠️ DigiTools - Premium Digital Marketplace
 
-🌐 Live Demo
-Check out the Live Site
+DigiTools is a modern, high-performance React web application designed for exploring and managing premium AI-powered digital tools. It features a seamless user experience for browsing products, viewing dynamic pricing plans, and managing a real-time shopping cart.
 
-🚀 Key Features
-Dynamic Product Toggling: Effortlessly switch between the Product Gallery and your Shopping Cart using a smooth, interactive tab system.
+## 🌐 Live Site Link
+[View Live Project](https://digitoolsss.netlify.app/)
 
-Smart Shopping Cart: Add or remove premium tools in real-time with an automated counter in the navbar and a detailed summary in the cart section.
+## 🚀 Key Features
 
-Responsive Pricing Plans: A beautifully designed, mobile-responsive pricing section featuring "Most Popular" highlighting to guide user choices.
+* **Dynamic Product Toggling:** Seamlessly switch between the **Product Gallery** and **Shopping Cart** using an interactive tab system without page reloads.
+* **Smart Cart Management:** Add or remove premium tools in real-time. Features an automated counter in the Navbar and a detailed summary in the Cart section with a "Proceed to Checkout" option.
+* **Interactive Pricing Section:** A beautifully designed pricing layout with a "Most Popular" highlight mode, providing a clear visual hierarchy for different subscription tiers.
 
-Instant Notifications: Integrated React-Toastify for real-time feedback when adding items, removing products, or proceeding to checkout.
+## 💻 Technologies Used
 
-💻 Technologies Used
-Frontend: React.js
+* **Framework:** React.js (Vite)
+* **Styling:** Tailwind CSS & DaisyUI
+* **Icons:** React Icons (Fa, Ci, etc.)
+* **Notifications:** React-Toastify
+* **State Management:** React Hooks (`useState`, `useEffect`)
+* **Deployment:** Netlify
 
-Styling: Tailwind CSS & DaisyUI
+## 🛠️ Installation & Setup
 
-Icons: React Icons
+1. **Clone the repository:**
+   ```bash
+   git clone [https://github.com/Tofazzal-13/Assignment_06.git](https://github.com/Tofazzal-13/Assignment_06.git)
 
-Notifications: React-Toastify
+2. **Install dependencies:
+    ```bash
+    ```npm install
 
-Deployment: Netlify
+3. **Start the development server:**
+    ```bash
+    ```npm run dev
+--
+📂 Features Breakdown
+Navbar: Real-time cart count and responsive navigation.
 
-State Management: React Hooks (useState, useEffect)
+Banner: Eye-catching hero section with meaningful call-to-action buttons.
 
-🛠️ Installation & Setup
-Clone the repository:
+Product Cards: Grid-based layout showcasing tool details, pricing, and features.
 
-Bash
-git clone https://github.com/Tofazzal-13/Assignment_06.git
-Install dependencies:
+Cart: 1-column layout for easy item removal and checkout simulation.
 
-Bash
-npm install
-Start the development server:
-
-Bash
-npm run dev
-
-📂 Project Structure
-. src/Components: Contains reusable UI components like Navbar, Banner, Product Cards, etc.
-
-. public/primium.json: Mock data for the product listings.
+Footer: Complete site information and social links.
