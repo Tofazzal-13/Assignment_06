@@ -5,12 +5,12 @@ const Cart = ({ carts, setCarts }) => {
     const totalPrice = carts.reduce((sum, cart) => sum + cart.price, 0)
     const handlePayment = () => {
         setCarts([])
-        toast("Payment Successfully")
+        toast.success("Payment Successfully")
     }
     const handleDelete = (cart) =>{
         const filteredArray = carts.filter(c => c.id !== cart.id)
         setCarts(filteredArray)
-        toast("Delete from Cart")
+        toast.success("Delete from Cart")
         
     }
 

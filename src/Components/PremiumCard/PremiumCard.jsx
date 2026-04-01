@@ -7,8 +7,14 @@ const PremiumCard = ({ primium, carts, setCarts }) => {
 
     const handleBuy = () => {
         setIsBuy(true)
+        const isFound = carts.find(cart => cart.id === primium.id)
+        if(isFound){
+            toast.error("cart already in cart")
+            return
+        }
+        
         setCarts([...carts, primium])
-        toast("add to cart")
+        toast.success("add to cart")
     }
 
     return (
