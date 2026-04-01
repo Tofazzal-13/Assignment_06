@@ -7,7 +7,7 @@ const ThreeSteps = () => {
                 <h2 className='text-5xl font-extrabold text-[##101727]'>Get Started in 3 Steps</h2>
                 <p className='text-[#627382]'>Start using premium digital tools in minutes, not hours.</p>
             </div>
-            <div className='grid grid-cols-3 gap-4'>
+            <div className='grid grid-cols-1 md:grid-cols-3 gap-4'>
                 {/* card 1 */}
                 <div className='border rounded-3xl flex justify-center items-center p-20 relative '>
                     <div className="card text-center space-y-2">

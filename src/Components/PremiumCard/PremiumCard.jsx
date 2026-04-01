@@ -13,9 +13,6 @@ const PremiumCard = ({primium, carts, setCarts}) => {
         <div>
             <div className='card border border-[#F2F2F2] shadow-xs p-4 h-full m-4 md:m-0 rounded-2xl space-y-4 relative'>
 
-                {/* <div className='border rounded-3xl border-gray-400 text-center px-3 absolute top-2 right-2'>
-                                <a href="">{primium.tagType}</a>
-                            </div> */}
 
                 <div className={`border rounded-3xl text-center px-3 absolute top-2 right-2 text-xs font-medium py-0.5
                             ${primium.tagType === 'popular' ? 'bg-orange-100 text-orange-600 border-orange-200' : ''}

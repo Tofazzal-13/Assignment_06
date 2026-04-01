@@ -8,9 +8,14 @@ import Primiums from './Components/PrimiumTools/Primiums'
 import Cart from './Components/Cart/Cart'
 import Tabs from './Components/Tabs/Tabs'
 import ThreeSteps from './Components/ThreeSteps/ThreeSteps'
+import TransparentCard from './Components/TransparentCard/TransparentCard'
 
 const getPrimium = async () => {
   const res = await fetch("/primium.json");
+  return res.json()
+}
+const getTransparent = async () => {
+  const res = await fetch("/transparent.json");
   return res.json()
 }
 
@@ -23,6 +28,7 @@ function App() {
 
 
   const primiumPromise = getPrimium()
+  const transparentPromise = getTransparent();
 
   return (
     <>
@@ -60,6 +66,9 @@ function App() {
 
       {activeTab == "cart" && <Cart carts={carts} setCarts={setCarts}></Cart>}
       <ThreeSteps></ThreeSteps>
+      <Suspense>
+        <TransparentCard transparentPromise = {transparentPromise}></TransparentCard>
+      </Suspense>
       <Footer></Footer>
     </>
   )
