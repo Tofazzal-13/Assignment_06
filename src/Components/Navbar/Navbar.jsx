@@ -5,7 +5,7 @@ const Navbar = ({ carts }) => {
 
 
     return (
-        <div>
+        <div className="sticky top-0 z-50 bg-white/80 backdrop-blur-md border-b border-gray-100">
             <div className="navbar container mx-auto ">
                 <div className="navbar-start">
                     <div className="flex items-center gap-1 font-bold text-xl">
