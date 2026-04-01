@@ -67,14 +67,3 @@ const Cart = ({ carts, setCarts }) => {
 export default Cart;
 
 
-
-/*     "id": "prod-01",
-    "name": "Starter Plan",
-    "description": "Essential tools for individuals and small projects getting started.",
-    "price": 0,
-    "period": "one-time",
-    "tag": "Free Forever",
-    "tagType": "new",
-    "features": ["3 Projects", "Basic Analytics", "Community Support"],
-    "icon": "rocket-launch",
-    "img": "https://i.ibb.co.com/sJPR2SP3/2601192.png" */
